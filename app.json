@@ -8,7 +8,7 @@
     "scheme": "groceryapp",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/images/icon.png"
     },
     "android": {
       "adaptiveIcon": {
@@ -34,11 +34,15 @@
             "imageWidth": 76
           }
         }
-      ]
+      ],
+      "expo-localization",
+      "expo-image"
     ],
     "experiments": {
       "typedRoutes": true,
-      "reactCompiler": true
-    }
-  }
+      "reactCompiler": false
+    },
+    "sdkVersion": "55.0.0"
+  },
+  "name": "grocery-app"
 }
