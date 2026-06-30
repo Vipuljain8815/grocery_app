@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { Product } from '../models';
 
-export type CartItem = Product & {
+type CartItem = Product & {
   quantity: number;
 };
 

@@ -34,7 +34,12 @@ export default function ProfileScreen() {
 
   const handleLogout = async () => {
     setLogoutVisible(false);
-    await supabase.auth.signOut();
+    const { error } = await supabase.auth.signOut();
+    if (error) {
+      console.error('Logout error:', error);
+    }
+    // Force the router to go back to the login screen immediately
+    router.replace('/(auth)/login');
   };
 
   const handleDeleteAccount = async () => {

@@ -1,8 +1,8 @@
 export const theme = {
   colors: {
-    primary: '#10B981', // Fresh Emerald Green
-    primaryDark: '#059669',
-    primaryLight: '#D1FAE5',
+    primary: '#48C2B7', // Vibrant Teal matching the logo
+    primaryDark: '#30A398',
+    primaryLight: '#E0F6F4',
     secondary: '#F59E0B', // Warm amber for accents/promos
     background: '#F9FAFB', // Very subtle off-white
     surface: '#FFFFFF', // Pure white for cards

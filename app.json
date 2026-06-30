@@ -1,37 +1,49 @@
 {
   "expo": {
-    "name": "grocery-app",
+    "name": "Grocery App",
     "slug": "grocery-app",
+    "description": "Fast and fresh groceries delivered to your door.",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/app-logo.png",
     "scheme": "groceryapp",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/images/icon.png"
+      "bundleIdentifier": "com.groceryapp.mobile",
+      "icon": "./assets/images/app-logo.png"
     },
     "android": {
+      "package": "com.groceryapp.mobile",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#48C2B7",
+        "foregroundImage": "./assets/images/app-logo.png"
       },
       "predictiveBackGestureEnabled": false
     },
+    "androidStatusBar": {
+      "backgroundColor": "#FFFFFF",
+      "barStyle": "dark-content",
+      "translucent": false
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#FFFFFF",
+      "barStyle": "dark-content"
+    },
     "web": {
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/app-logo.png",
+      "bundler": "metro"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#48C2B7",
+          "image": "./assets/images/app-logo.png",
+          "imageWidth": 200,
           "android": {
-            "image": "./assets/images/splash-icon.png",
-            "imageWidth": 76
+            "image": "./assets/images/app-logo.png",
+            "imageWidth": 200
           }
         }
       ],
@@ -43,6 +55,5 @@
       "reactCompiler": false
     },
     "sdkVersion": "55.0.0"
-  },
-  "name": "grocery-app"
+  }
 }

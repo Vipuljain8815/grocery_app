@@ -17,7 +17,7 @@ export default function CartScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const insets = useSafeAreaInsets();
-  const TAB_BAR_HEIGHT = 65 + (insets.bottom > 0 ? insets.bottom - 10 : 0);
+  const TAB_BAR_HEIGHT = 70 + insets.bottom;
 
   const handleCheckout = () => {
     if (getTotalPrice() < settings.min_order_value) {
@@ -215,7 +215,6 @@ const styles = StyleSheet.create({
   footer: {
     backgroundColor: theme.colors.surface,
     padding: theme.spacing.lg,
-    paddingBottom: 110,
     borderTopWidth: 1,
     borderTopColor: theme.colors.border,
     ...theme.shadows.lg,

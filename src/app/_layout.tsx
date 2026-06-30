@@ -10,6 +10,7 @@ import { useSettingsStore } from '../store/useSettingsStore';
 import { View, ActivityIndicator } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import '../i18n';
+import { StatusBar } from 'expo-status-bar';
 import { useTranslation } from 'react-i18next';
 import { theme } from '../theme';
 
@@ -86,7 +87,8 @@ export default function RootLayout() {
   }, [session, isLoading, segments, rootNavigationState?.key]);
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <GestureHandlerRootView style={{ flex: 1, backgroundColor: theme.colors.background }}>
+      <StatusBar style="dark" />
       <Stack 
         screenOptions={{ 
           headerShown: false, 

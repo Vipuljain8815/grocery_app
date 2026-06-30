@@ -30,8 +30,8 @@ export default function TabLayout() {
         tabBarStyle: [
           styles.tabBar,
           {
-            height: 65 + (insets.bottom > 0 ? insets.bottom - 10 : 0),
-            paddingBottom: insets.bottom > 0 ? insets.bottom - 10 : 10,
+            height: 70 + insets.bottom,
+            paddingBottom: insets.bottom > 0 ? insets.bottom : 15,
           }
         ],
         tabBarBackground: () => (

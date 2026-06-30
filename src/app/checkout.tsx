@@ -492,7 +492,7 @@ export default function CheckoutScreen() {
       </ScrollView>
 
       {!isAddingNew && (
-        <View style={[styles.footer, { paddingBottom: insets.bottom > 0 ? insets.bottom : 20 }]}>
+        <View style={[styles.footer, { paddingBottom: insets.bottom + 20 }]}>
           <AnimatedButton 
             title={submitting ? t('checkout.processing') : t('checkout.place_order')}
             onPress={handlePlaceOrder}
